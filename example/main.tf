@@ -1,5 +1,5 @@
 module "autonomous_databases" {
-  source    = "./modules/autonomous_database"
+  source    = "https://github.com/datacentrics01/dcx-terraform-oci-adb.git"
   instances = {
     "adb_instance_1" = {
       compartment_id        = var.compartment_id,
