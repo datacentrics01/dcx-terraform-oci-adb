@@ -6,7 +6,6 @@ resource "random_string" "autonomous_database_admin_password" {
   min_lower   = 1
   min_upper   = 1
   min_special = 1
-  special     = "!@#$%^&*()_+[]{}<>:-"
 }
 
 resource "oci_database_autonomous_database" "adb" {
